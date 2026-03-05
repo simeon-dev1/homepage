@@ -18,6 +18,12 @@ body {
   margin: 0;
 }
 
+@media (min-width: 900px) {
+	* {
+		border: 1px solid blue;
+	}
+}
+
 body::before {
   content: "";
   position: absolute;
@@ -48,9 +54,14 @@ button {
   border: none;
 }
 
+.hero {
+	display: flex;
+	flex-direction: column;
+	background-color: red;
+}
+
 .hero-photo {
-  max-width: 18rem;
-  min-width: 16rem;
+  width: 18rem;
   align-self: center;
   margin-top: 3rem;
   height: 25rem;
@@ -76,16 +87,17 @@ button {
 }
 
 .about {
-  color: black;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1.5rem;
+  gap: 2rem;
   & > p {
     color: rgb(100, 100, 100);
     line-height: 1.8rem;
     font-size: 1.2rem;
-    margin: 1.5rem 0.5rem;
+    margin: 0rem 0.5rem;
   }
 }
 
@@ -198,4 +210,26 @@ footer {
   	left: 50%;
   	transform: translate(-50%, -50%);
   }
+}
+
+@media (min-width: 500px) {
+	* {
+		border: 1px solid red;
+	}
+
+	.about {
+		background-color: white;
+		flex-direction: row;
+		width: 80vw;
+		overflow: auto;
+		& .hero-photo {
+			width: 10rem;
+			height: 15rem;
+		}
+
+		img {
+			float: left;
+			border: 7rem;
+		}
+	}
 }
