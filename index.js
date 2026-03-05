@@ -6,7 +6,7 @@ for(let i = 0; i < 6; i++) {
 	workCards.innerHTML += `
 		<div class="work-card">
 			<div class="work-image">
-				Screenshot of Project
+				<h3>Screenshot of Project</h3>
 			</div>
 			<div class="work-description">
 				<div>
@@ -14,8 +14,8 @@ for(let i = 0; i < 6; i++) {
 						<h3>Project Name</h3>
 					</div>
 					<div class="icons">
-						<button>GIT</button>
-						<button>ENTER</button>
+					    <button><i class="fa-brands fa-github"></i></button>
+					    <button><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
 					</div>
 				</div>
 				<div class="description-text">

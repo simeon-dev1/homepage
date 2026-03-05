@@ -44,6 +44,8 @@ img {
 button {
   width: 2.75rem;
   height: 2.75rem;
+  background: none;
+  border: none;
 }
 
 .hero-photo {
@@ -91,7 +93,11 @@ button {
   display: flex;
   padding-bottom: 2rem;
   justify-content: space-around;
-  width: 60vw;
+  width: 70vw;
+}
+
+.about-icons i {
+	font-size: 2rem;
 }
 
 /*------*/
@@ -118,7 +124,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
 }
 
 .work-description {
@@ -138,10 +143,12 @@ button {
 
 .icons {
   margin-left: auto;
+  i {
+  	font-size: 1.3rem;
+  }
   button {
 		width: 2.2rem;
 		height: 2.2rem;
-		color: red;
 	}
 }
 
@@ -156,9 +163,21 @@ footer {
 
 .footer-top {
   padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
   & > * {
   	margin: 1.2rem;
   }
+}
+
+.contact-icons {
+	display: flex;
+	width: 60vw;
+	justify-content: space-around;
+	align-self: center;
+	i {
+		font-size: 2.2rem;
+	}
 }
 
 .bottom-image {
@@ -175,7 +194,7 @@ footer {
   	width: 100%;
   	height: 5rem;
   	/*centering*/
-  	top: 50%;
+  	top: 80%;
   	left: 50%;
   	transform: translate(-50%, -50%);
   }
