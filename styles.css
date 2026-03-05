@@ -205,3 +205,19 @@ footer {
     transform: translate(-50%, -50%);
   }
 }
+
+
+/* Add this to your CSS file */
+@media (min-width: 768px) {
+  body {
+    max-width: 1200px;      /* Stops content from going too wide */
+    margin: 0 auto;         /* Centers everything */
+    padding: 0 2rem;        /* Adds breathing room on sides */
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
