@@ -2,8 +2,8 @@ console.log("🚀 Weblate ready!");
 
 const workCards = document.querySelector(".work-cards");
 
-for(let i = 0; i < 6; i++) {
-	workCards.innerHTML += `
+for (let i = 0; i < 6; i++) {
+  workCards.innerHTML += `
 		<div class="work-card">
 			<div class="work-image">
 				<h3>Screenshot of Project</h3>
@@ -23,14 +23,14 @@ for(let i = 0; i < 6; i++) {
 				</div>
 			</div>
 		</div>
-	`
+	`;
 }
 
-const workDescriptions = []
-const workCardImages = document.querySelectorAll(".work-card > .work-image")
+const workDescriptions = [];
+const workCardImages = document.querySelectorAll(".work-card > .work-image");
 
-const colors = ["pink", "lightblue", "lightgreen", "yellow", "orange", "lightgreen"]
+const colors = ["pink", "lightblue", "lightgreen", "yellow", "orange", "lightgreen"];
 
 for (let i = 0; i < workCardImages.length; i++) {
-	workCardImages[i].style.backgroundColor = colors[i];
+  workCardImages[i].style.backgroundColor = colors[i];
 }
