@@ -16,17 +16,22 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
+	margin: 0.75rem;
 }
 
 body::before {
 	content: "";
 	position: absolute;
 	width: 200vw;
-	height: 25rem;
+	height: 30rem;
 	transform: rotate(330deg) translate(-5rem, -13rem);
 	background-color: rgb(10, 150, 220) ;
-	z-index: -100;
-	box-shadow: 0.2rem 0.2rem 0.2rem grey;
+	z-index: -1;
+	box-shadow: 0.2rem7.2rem 0.2rem grey;
+}
+
+h1 {
+	margin: 0.5rem;
 }
 
 img {
@@ -56,7 +61,49 @@ img {
 
 .about {
 	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	& > p {
+		color: grey;
+		line-height: 1.8rem;
+		font-size: 1.2rem;
+		margin: 1.5rem;
+	}
 }
+
+.about-icons {
+	display: flex;
+	padding-bottom: 2rem;
+	justify-content: space-around;
+	width: 60vw;
+	& > button {
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size:: 1.8rem;
+	}
+}
+
+/*------*/
+.work-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.work-card {
+	width: 15rem;
+	border: 1px solid black;
+	& > .image {
+		
+	}
+	& > .work-description {
+		
+	}
+}
+
+
 
 footer {
 	color: red;

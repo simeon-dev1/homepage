@@ -4,7 +4,7 @@ const workCards = document.querySelector(".work-cards");
 
 for(i = 0; i < 6; i++) {
 	workCards.innerHTML += `
-		<div>
+		<div class="work-card">
 			<div class="image">
 				Screenshot of Project
 			</div>
@@ -23,3 +23,5 @@ for(i = 0; i < 6; i++) {
 		</div>
 	`
 }
+
+const workDescriptions = []
